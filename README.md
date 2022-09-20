@@ -1,1 +1,4 @@
-# miniproject1
+INF601 - Advanced Programming in Python
+Alex (Daniele) Basden 
+Mini Project 1
+
