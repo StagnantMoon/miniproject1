@@ -30,7 +30,8 @@ from matplotlib import pyplot as plt
 plt.plot(msftArray)
 
 # show the graph
+
+plt.savefig('charts/msft.png')
+
 plt.show()
-
-
 
