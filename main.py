@@ -57,15 +57,32 @@ print(nvdaPrices)
 print(tsmPrices)
 
 # Create a NumPy Array
-#msftArray = np.array(msftPrices)
+msftArray = np.array(msftPrices)
+amdArray = np.array(amdPrices)
+intcArray = np.array(intcPrices)
+nvdaArray = np.array(nvdaPrices)
+tsmArray = np.array(tsmPrices)
 
 # Create matplotlib graph
-#from matplotlib import pyplot as plt
-#plt.plot(msftArray)
+from matplotlib import pyplot as plt
 
+plt.plot(msftArray, color='c', label='MSFT')
+plt.plot(amdArray, color='r', label='AMD')
+plt.plot(intcArray, color='b', label="Intel")
+plt.plot(nvdaArray, color='g', label="Nvidia")
+plt.plot(tsmArray, color='m', label="TSM")
+
+plt.xlabel("Days")
+plt.ylabel("Share Price")
+plt.title("Share Price from 02.09.2022 to 19.09.2022")
+
+plt.legend()
+
+#plt.plot(msftArray)
+#plt.plot(amdArray)
 # show the graph
 
 #plt.savefig('charts/msft.png')
 
-#plt.show()
+plt.show()
 
