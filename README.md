@@ -19,5 +19,5 @@ Terminal Way:
 In Mac:  
 1. Find the path location where you downloaded the script
 2. Using the Terminal use the cd command to navigate to the folder containing the python file. Or Drag the file into the Terminal Window,.
-3. Once you are at the right folder, use python3 <miniproject1> to execute the script. 
+3. Once you are at the right folder, use python3 'file name' replacing the ' with angle brackets to execute the script. 
 
