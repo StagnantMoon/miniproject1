@@ -3,6 +3,10 @@
 # Mini Project 1
 
 import yfinance as yf
+import numpy as np
+# import matplotlib.pyplot as plt
+import matplotlib
+matplotlib.use("QtAgg")
 
 msft = yf.Ticker("MSFT")
 
@@ -18,6 +22,15 @@ for price in data ['Adj Close']:
     msftPrices.append(price)
 
 print(msftPrices)
+# Create a NumPy Array
+msftArray = np.array(msftPrices)
+
+# Create matplotlib graph
+from matplotlib import pyplot as plt
+plt.plot(msftArray)
+
+# show the graph
+plt.show()
 
 
 
